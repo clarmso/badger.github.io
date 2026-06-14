@@ -46,7 +46,8 @@ files = []
 for file in os.listdir("images"):
     name, ext = file.rsplit(".", 1)
     if ext == "png":
-        files.append({"name": file, "title": name.replace("-", " ")})ß
+        files.append({"name": file, "title": name.replace("-", " ")})
+...
 thumbnails.append(Image.load(f"thumbnails/{file['name']}"))
 ```
 
